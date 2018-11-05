@@ -7,5 +7,6 @@ public class ContextLoaderTest {
         AnnotationConfigApplicationContext context= new AnnotationConfigApplicationContext(ParentConfig.class);
         Car toyo = (Car) context.getBean(Toyo.class);
         toyo.print();
+        System.out.println("-----------------");
     }
 }
